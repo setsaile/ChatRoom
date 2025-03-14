@@ -48,7 +48,8 @@ class Client(Cmd):
     def start(self):
         """
         启动客户端
-        """
+        """ 
+        # 改成自己的ip地址
         self.__socket.connect(('10.100.1.98', 8888))
         self.cmdloop()
 
