@@ -49,7 +49,7 @@ class Client(Cmd):
         """
         启动客户端
         """
-        self.__socket.connect(('127.0.0.1', 8888))
+        self.__socket.connect(('10.100.1.98', 8888))
         self.cmdloop()
 
     def do_login(self, args):

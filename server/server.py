@@ -93,8 +93,8 @@ class Server:
         """
         启动服务器
         """
-        # 绑定端口
-        self.__socket.bind(('127.0.0.1', 8888))
+        # 绑定端口(改成自己的ip地址)
+        self.__socket.bind(('10.100.1.98', 8888))
         # 启用监听
         self.__socket.listen(10)
         print('[Server] 服务器正在运行......')
